@@ -12,8 +12,8 @@ importers:
         specifier: ^2.11.8
         version: 2.11.8
       '@vulpemventures/secp256k1-zkp':
-        specifier: ^3.2.1
-        version: 3.2.1
+        specifier: '3.1'
+        version: 3.1.0
       bitcoinjs-lib:
         specifier: ^6.1.4
         version: 6.1.4
@@ -470,9 +470,9 @@ packages:
   '@types/randombytes@2.0.3':
     resolution: {integrity: sha512-+NRgihTfuURllWCiIAhm1wsJqzsocnqXM77V/CalsdJIYSRGEHMnritxh+6EsBklshC+clo1KgnN14qgSGeQdw==}
 
-  '@vulpemventures/secp256k1-zkp@3.2.1':
-    resolution: {integrity: sha512-2U4nuNbXuUgMmxhuoILbRMoD2DE7KND3udk5cYilIS1MHvMtje9ywUm/zsI0g7d7x8g2A57xri+wvqCC/fCnJg==}
-    engines: {node: '>=12'}
+  '@vulpemventures/secp256k1-zkp@3.1.0':
+    resolution: {integrity: sha512-64Ic62HK/JkjMzKPWcvlw7st/elRrozNqnN6oTaM+M7p1jsJRkCvPWskO5lYxtufKI0Zk2vDLfVBrTTVewBEwg==}
+    engines: {node: '>=12.0.0'}
 
   '@yr/monotone-cubic-spline@1.0.3':
     resolution: {integrity: sha512-FQXkOta0XBSUPHndIKON2Y9JeQz5ZeMqLYZVVK93FliNBFm7LNMIZmY6FrMEB9XPcDbE2bekMbZD6kzDkxwYjA==}
@@ -982,9 +982,6 @@ packages:
 
   long@4.0.0:
     resolution: {integrity: sha512-XsP+KhQif4bjX1kbuSiySJFNAehNxgLb6hPRGJ9QsUr8ajHkuXGdrHmFUTUUXhDwVX2R5bY4JNZEwbUiMhV+MA==}
-
-  long@5.2.3:
-    resolution: {integrity: sha512-lcHwpNoggQTObv5apGNCTdJrO69eHOZMi4BNC+rTLER8iHAqGrUVeLh/irVIM7zTw2bOXA8T6uNPeujwOLg/2Q==}
 
   magic-string@0.27.0:
     resolution: {integrity: sha512-8UnnX2PeRAPZuN12svgR9j7M1uWMovg/CEnIwIG0LFkXSJJe4PdfUGiTGl8V9bsBHFUtfVINcSyYxd7q+kx9fA==}
@@ -1889,9 +1886,10 @@ snapshots:
     dependencies:
       '@types/node': 20.6.0
 
-  '@vulpemventures/secp256k1-zkp@3.2.1':
+  '@vulpemventures/secp256k1-zkp@3.1.0':
     dependencies:
-      long: 5.2.3
+      '@types/node': 13.13.52
+      long: 4.0.0
 
   '@yr/monotone-cubic-spline@1.0.3': {}
 
@@ -2510,8 +2508,6 @@ snapshots:
       p-locate: 5.0.0
 
   long@4.0.0: {}
-
-  long@5.2.3: {}
 
   magic-string@0.27.0:
     dependencies:

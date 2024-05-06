@@ -41,7 +41,7 @@ export default defineConfig({
 	},
 	build: {
 		rollupOptions: {
-			external: ['@vulpemventures/secp256k1-zkp'], // , 'crypto', 'ecpair', 'tiny-secp256k1', 'nostr-tools', 'qrcode-generator', 'bitcoinjs-lib'
+			external: ['@vulpemventures/secp256k1-zkp', 'crypto', 'ecpair', 'tiny-secp256k1', 'nostr-tools', 'qrcode-generator', 'bitcoinjs-lib']
 		}
 	}
 });
